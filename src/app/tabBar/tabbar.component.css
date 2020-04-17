@@ -1,0 +1,21 @@
+
+.mat-tab-label.mat-tab-label-active {
+    background-color: #212121;
+    opacity: 1;
+    color: #ffffff;
+}
+
+.mat-tab-label {
+  background-color: #212121;
+  color: #ffffff;
+}
+
+.mat-tab-labels {
+    background-color: #212121;
+    color: #ffffff !important;
+
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar {
+    background-color: #a32828;
+}

@@ -1,0 +1,56 @@
+<div>
+  <div class="signUp">
+<mat-card>
+    <mat-card-title>Sign Up</mat-card-title>
+<mat-card-content>
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <p>
+    <mat-form-field>
+      <input
+      [(ngModel)]="username"
+      matInput placeholder="Username"
+      formControlName="username">
+    </mat-form-field>
+  </p>
+
+  <p>
+    <mat-form-field>
+      <input
+      [(ngModel)]="password"
+      type="password"
+      matInput placeholder="Password"
+      formControlName="password">
+    </mat-form-field>
+  </p>
+
+  <p>
+    <mat-form-field>
+      <input type="email"
+      matInput placeholder="Email"
+      id="email"
+      [(ngModel)]="email"
+      formControlName="email">
+    </mat-form-field>
+  </p>
+
+  <p *ngIf="error" class="error">
+    {{ error }}
+  </p>
+
+  <div class="button">
+    <button type="submit" mat-raised-button (click)="signup()" matTooltip="Create an account"
+    matTooltipShowDelay="1000"
+    matTooltipHideDelay="500">Sign Up</button>
+
+  </div>
+
+</form>
+</mat-card-content>
+</mat-card>
+</div>
+
+<div class="welcomeText">
+  <h1>Sign up today!</h1>
+  <h2> Creating an account with us will allow you to access a growin library of movies and tv shows on demand!</h2>
+  </div>
+</div>

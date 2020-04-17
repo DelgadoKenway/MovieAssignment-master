@@ -1,0 +1,31 @@
+<div class="grid">
+
+  <mat-card *ngFor ="let movie of movies" >
+
+    <mat-card-title> {{ movie.title }} </mat-card-title>
+    <mat-card-subtitle> {{ movie.genre }} </mat-card-subtitle>
+
+  <img mat-card-image  (click)="openDialog(movie)" src="{{ movie.photo }}"
+  class="image"
+  style="width: 100%; height: 100%; max-width: 500px; max-height: 250px;">
+
+  <mat-card-content>
+      Description:
+    <br>
+     {{ movie.description }}
+  </mat-card-content>
+
+    <mat-card-actions>
+      <app-fav-button></app-fav-button>
+      <button mat-raised-button matTooltip="Watch trailer"
+        matTooltipShowDelay="1000"
+        matTooltipHideDelay="500" (click)="openDialog(movie)">Trailer </button>
+    </mat-card-actions>
+
+</mat-card>
+</div>
+
+
+
+
+

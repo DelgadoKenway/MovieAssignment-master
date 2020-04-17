@@ -1,0 +1,17 @@
+
+<h2 mat-dialog-title>{{data.myTitle}}</h2>
+
+<mat-dialog-content>
+    <iframe width="560" height="315" [src]="videoUrl" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+    </iframe>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button class="backButton" mat-button mat-dialog-close matTooltip="Cancel dialog"
+  matTooltipShowDelay="1000"
+  matTooltipHideDelay="500">Back</button>
+  <!-- The mat-dialog-close directive optionally accepts a value as a result for the dialog. -->
+<app-fav-button></app-fav-button>
+
+</mat-dialog-actions>
